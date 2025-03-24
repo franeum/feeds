@@ -7,3 +7,11 @@ from record;
 select count(compound)
 from record
 where compound < 0;
+
+MIDO RECEIVE
+
+>>> while True:
+...     msg = inport.receive()
+...     if msg:
+...             print(msg)
+... 
