@@ -1,0 +1,9 @@
+MEDIA COMPOUND
+
+select SUM(compound) / (SELECT COUNT(*) FROM record)
+as whole
+from record;
+
+select count(compound)
+from record
+where compound < 0;
